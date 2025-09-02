@@ -1,4 +1,5 @@
 # Generador de Rostros LoRA
+[Importante] Se debe adaptar el backend, dado que este actualmente usa ngrok y uvicorn con puertos y keys estáticas.
 
 Este repositorio contiene una aplicación web desarrollada con Django que permite generar rostros sintéticos a partir de atributos seleccionados. La generación de imágenes se realiza a través de un servicio externo al que se accede mediante una petición HTTP.
 
@@ -7,6 +8,7 @@ Este repositorio contiene una aplicación web desarrollada con Django que permit
 - Django
 - requests
 - uvicorn (para ejecutar el servicio de generación)
+- ngrok (para conectar las solicitudes al backend)
 
 ## Instalación
 1. Clona este repositorio:
@@ -42,4 +44,5 @@ Este repositorio contiene una aplicación web desarrollada con Django que permit
    python manage.py runserver
    ```
 4. Abre tu navegador en `http://127.0.0.1:8000/` para acceder a la aplicación.
+
 
